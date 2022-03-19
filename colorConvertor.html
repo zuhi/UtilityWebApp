@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Covertor</title>
+    <link rel="stylesheet" href="./colorCovertor.css"></style>
+    <script defer src="./colorConvertor.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header-section">
+            <div class="header-section-col">
+                <img class="header-image" src="./toolsLogo.png">
+                <h1 class="heading" >Tools & Utility App</h1>
+
+            </div>
+            <div>
+                <a href="./index.html">
+                    <img src="https://img.icons8.com/external-royyan-wijaya-detailed-outline-royyan-wijaya/48/000000/external-home-building-royyan-wijaya-detailed-outline-royyan-wijaya-2.png"/>
+
+                </a>
+                
+            </div>    
+        </div>
+        <div class="main-content">
+            <div class="card-conatiner">
+                    <div class="card">
+                        <div id="convertor-choice">
+                            <div class="text-inline">
+                                <input type="radio" name="conv-choice" value="rgb-hex-convertor">
+                                <label for="rgb-hex-convertor">RGB to HEX Convertor </label>
+                            </div>
+                            <div class="text-inline">
+                                <input type="radio" name="conv-choice" value="hex-rgb-covertor">
+                                <label for="hex-rgb-covertor">HEX to RGB Convertor</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-card">
+                        <div class="card">
+                            <div id="display-rgb-hex">
+                                R:<input id="r-input" type="text" value=""/>
+                                G<input id="g-input" type="text" value="">
+                                B:<input id="b-input" type="text" value="">
+                                <button class="button1">Convert RGB->HEX</button>
+                                <div class="color-and-result-display">
+                                    <div id="rgbtohex-result-display">
+                                    </div>
+                                    <div id="rgbtohex-color-display">
+                                    </div>
+
+                                </div>
+
+                                
+                            </div>
+                            <div id="display-hex-rgb" >
+                                Hex Value:<input id="hex-input" type="text" value=""/>
+
+                                <button class="button2">Convert HEX->RGB</button>
+                                <div class="color-and-result-display"> 
+                                    <div id="hextorgb-result-display">
+                                    </div>
+                                    <div id="hextorgb-color-display">
+                                    </div>
+
+                                </div>
+
+                    
+                            </div>
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>

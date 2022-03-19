@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Tools/String Utilities</title>
+    <script defer src="./textTools.js"></script>
+    <link rel="stylesheet" href="./textTool.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-section">
+            <div class="header-section-col">
+                <img class="header-image" src="./toolsLogo.png">
+                <h1 class="heading" >Tools & Utility App</h1>
+
+            </div>
+            <div>
+                <a href="./index.html">
+                    <img src="https://img.icons8.com/external-royyan-wijaya-detailed-outline-royyan-wijaya/48/000000/external-home-building-royyan-wijaya-detailed-outline-royyan-wijaya-2.png"/>
+
+                </a>
+                
+            </div>    
+        </div>
+        <div class="main-content">
+            <div class="card-conatiner">
+                    <div class="card">
+                        <div id="textTool-choice">
+                            <div class="text-inline">
+                                <input type="radio" name="tool-choice" value="word-length">
+                                <label for='word-length'>Count word length</label>
+                            </div>
+                            <div class="text-inline">
+                                <input type="radio" name="tool-choice" value="count-word">
+                                <label for="count-word">Count word in sentences</label>
+                            </div>
+                            <div class="text-inline">
+                                <input type="radio" name="tool-choice" value="reverse">
+                                <label for="reverse">Reverse the word/sentence</label>
+                            </div>
+                            <div class="text-inline">
+                                <input type="radio" name="tool-choice" value="find-replace">
+                                <label for="find-replace">Find & Replace words</label>
+                            </div>
+                            <div class="text-inline">
+                                <input type="radio" name="tool-choice" value="uppercase">
+                                <label for="uppercase">UpperCase</label>
+                            </div>
+                            <div class="text-inline">
+                                <input type="radio" name="tool-choice" value="lowercase">
+                                <label for="lowercase">SmallCase</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-card">
+                        <div class="card">
+                            <div id="result-section">
+                                <div id="display-word-length">
+                                    <input type="text" value="" placeholder="Enter a word">
+                                    <button>Calculate wordLength</button>
+                                    <p></p>
+                                </div>
+                        
+                                <div id="display-word-count">
+                                    <input type="text" value="" placeholder="Enter a sentence">
+                                    <button>Count No of Words</button>
+                                    <p></p>
+                                </div>
+                        
+                                <div id="display-reverse-word">
+                                    <input type="text" value="" placeholder="Enter a word">
+                                    <button>Reverse</button>
+                                    <p></p>
+                                </div>
+                        
+                                <div id="display-find-replace">
+                                    <div id="row-column">
+
+                                        <div id ="row_input">
+                                            <input type="text" id='sentence' value="" placeholder="Enter the sentence">
+                                            <input type="text" id="find" value="" placeholder="Enter word to replace">
+                                            <input type="text" id='replace' value="" placeholder="Enter the new word">
+
+                                        </div>
+                                        <div>
+                                            <button>Replace</button>
+
+                                        </div>
+
+                                    </div>
+                                         
+                                    <div>
+                                        <p></p>
+                                    </div>
+                                </div>
+                        
+                                <div id="display-uppercase">
+                                    <input type="text" value="" placeholder="Enter the word/string">
+                                    <button>UpperCase</button>
+                                    <p></p>
+                                </div>
+                        
+                                <div id="display-lowercase">
+                                    <input type="text" value="" placeholder="Enter the word/string">
+                                    <button>LowerCase</button>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

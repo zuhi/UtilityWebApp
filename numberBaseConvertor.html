@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Base Convertor</title>
+    <script defer src="./numberBaseConvertor.js"></script>
+    <link rel="stylesheet" href="./numberBaseConvertor.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-section">
+            <div class="header-section-col">
+                <img class="header-image" src="./toolsLogo.png">
+                <h1 class="heading" >Tools & Utility App</h1>
+
+            </div>
+            <div>
+                <a href="./index.html">
+                    <img src="https://img.icons8.com/external-royyan-wijaya-detailed-outline-royyan-wijaya/48/000000/external-home-building-royyan-wijaya-detailed-outline-royyan-wijaya-2.png"/>
+
+                </a>
+                
+            </div>    
+        </div>
+        <div class="main-content">
+            <div class="card-conatiner">
+                    <div class="card">
+                        <div id="baseConvertor-choice">
+                            <div class="text-inline">
+                                <input type="radio" name="base-choice" value="binary-decimal">
+                                <label for="binary-decimal">Binary To Decimal Convertor</label>
+                            </div>
+                            <div class="text-inline">
+                                <input type="radio" name="base-choice" value="binary-hex">
+                                <label for="binary-hex">Binary To Hex Convertor</label>
+                            </div>
+                            <div class="text-inline">
+                                <input type="radio" name="base-choice" value="binary-octal">
+                                <label for="binary-octal">Binary To Octal Convertor</label>
+                            </div>
+                            <div class="text-inline">
+                                <input type="radio" name="base-choice" value="decimal-binary">
+                                <label for="decimal-binary">Decimal To Binary Convertor</label>
+                            </div>
+                            <div class="text-inline">
+                                <input type="radio" name="base-choice" value="decimal-hex">
+                                <label for="decimal-hex">Decimal To Hex Convertor</label>
+                            </div>
+                            <div class="text-inline">
+                                <input type="radio" name="base-choice" value="decimal-octal">
+                                <label for="decimal-octal">Decimal To Octal Convertor</label>
+                            </div>
+                            <div class="text-inline">
+                                <input type="radio" name="base-choice" value="hex-binary">
+                                <label for="hex-binary">Hex To Binary Convertor</label>
+                            </div>
+                            <div class="text-inline">
+                                <input type="radio" name="base-choice" value="hex-decimal">
+                                <label for="hex-decimal">Hex To Decimal Convertor</label>
+                            </div>
+                            <div class="text-inline">
+                                <input type="radio" name="base-choice" value="hex-octal">
+                                <label for="hex-octal">Hex To Octal Convertor</label>
+                            </div>
+                            <div class="text-inline">
+                                <input type="radio" name="base-choice" value="octal-binary">
+                                <label for="octal-binary">Octal To Binary Convertor</label>
+                            </div>
+                            <div class="text-inline">
+                                <input type="radio" name="base-choice" value="octal-decimal">
+                                <label for="octal-decimal">Octal To Decimal Convertor</label>
+                            </div>
+                            <div class="text-inline">
+                                <input type="radio" name="base-choice" value="octal-hex">
+                                <label for="octal-hex">Octal To Hex Convertor</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-card">
+                        <div class="card">
+                            <div id="result-section">
+                                <div id="display-binary-decimal">
+                                    <label>Binary</label>
+                                    <input type="text" value="" placeholder="Enter value in binary">
+                                    <button>Convert Binary->Decimal</button>
+                                    <p></p>
+                                </div>
+                        
+                                <div id="display-binary-hex">
+                                    <label>Binary</label>
+                                    <input type="text" value="" placeholder="Enter value in binary">
+                                    <button>Convert Binary->Hex</button>
+                                    <p></p>
+                                </div>
+                        
+                                <div id="display-binary-octal">
+                                    <label>Binary</label>
+                                    <input type="text" value="" placeholder="Enter value in binary">
+                                    <button>Convert Binary->Octal</button>
+                                    <p></p>
+                                </div>
+                        
+                                <div id="display-decimal-binary">
+                                    <label>Decimal</label>
+                                    <input type="text" value="" placeholder="Enter value in decimal">
+                                    <button>Convert Decimal->Binary</button>
+                                    <p></p>
+                                </div>
+                        
+                                <div id="display-decimal-hex">
+                                    <label>Decimal</label>
+                                    <input type="text" value="" placeholder="Enter value in decimal">
+                                    <button>Convert Decimal->Hex</button>
+                                    <p></p>
+                                </div>
+                        
+                                <div id="display-decimal-octal">
+                                    <label>Decimal</label>
+                                    <input type="text" value="" placeholder="Enter value in decimal">
+                                    <button>Convert Decimal->Octal</button>
+                                    <p></p>
+                                </div>
+                        
+                                <div id="display-hex-binary">
+                                    <label>Hex</label>
+                                    <input type="text" value="" placeholder="Enter value in Hex">
+                                    <button>Convert Hex->Binary</button>
+                                    <p></p>
+                                </div>
+                        
+                                <div id="display-hex-decimal">
+                                    <label>Hex</label>
+                                    <input type="text" value="" placeholder="Enter value in Hex">
+                                    <button>Convert Hex->Decimal</button>
+                                    <p></p>
+                                </div>
+                        
+                                <div id="display-hex-octal">
+                                    <label>Hex</label>
+                                    <input type="text" value="" placeholder="Enter value in Hex">
+                                    <button>Convert Hex->Octal</button>
+                                    <p></p>
+                                </div>
+                        
+                                <div id="display-octal-binary">
+                                    <label>Octal</label>
+                                    <input type="text" value="" placeholder="Enter value in Octal">
+                                    <button>Convert Octal->Binary</button>
+                                    <p></p>
+                                </div>
+                        
+                                <div id="display-octal-hex">
+                                    <label>Octal</label>
+                                    <input type="text" value="" placeholder="Enter value in Octal">
+                                    <button>Convert Octal->Hex</button>
+                                    <p></p>
+                                </div>
+                        
+                                <div id="display-octal-decimal">
+                                    <label>Octal</label>
+                                    <input type="text" value="" placeholder="Enter value in Octal">
+                                    <button>Convert Octal->Decimal</button>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

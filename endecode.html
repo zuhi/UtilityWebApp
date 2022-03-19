@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href ="./endecode.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script defer src="./en-decCoder.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header-section">
+            <div class="header-section-col">
+                <img class="header-image" src="./toolsLogo.png">
+                <h1 class="heading" >Tools & Utility App</h1>
+
+            </div>
+            <div>
+                <a href="./index.html">
+                    <img src="https://img.icons8.com/external-royyan-wijaya-detailed-outline-royyan-wijaya/48/000000/external-home-building-royyan-wijaya-detailed-outline-royyan-wijaya-2.png"/>
+
+                </a>
+                
+            </div>    
+        </div>
+        <div class="main-content">
+            <div class="card-conatiner">
+                    <div class="card">
+                        <div id="decoder-choice">
+        
+                            <div class="text-inline">
+                                <input type="radio" name="encoder-choice" value="url-encode-decode">
+                                <label for="url-encode-decode">URL Encode/Decode </label>
+                            </div>
+                            <div class="text-inline">
+                                <input type="radio" name="encoder-choice" value="base64-decode">
+                                <label for="base64-encode">Base64 Decode</label>
+                            </div>
+                            <div class="text-inline">
+                                <input type="radio" name="encoder-choice" value="base64-encode">
+                                <label for="base64-encode">Base64 Encode</label>
+                            </div>
+                            <div class="text-inline">
+                                <input type="radio" name="encoder-choice" value="md5-hashgenerator">
+                                <label for="md5-hashgenerator">MD5 Hash Generator</label>
+                            </div>
+                            <div class="text-inline">
+                                <input type="radio" name="encoder-choice" value="sha1-hashgenerator">
+                                <label for="sha1-hashgenerator">SHA-1 Hash Generator</label>
+                            </div>
+                            <div class="text-inline">
+                                <input type="radio" name="encoder-choice" value="sha256-hashgenerator">
+                                <label for="sha256-hashgenerator">SHA-256 Hash Generator</label>
+                            </div>
+                            <div class="text-inline">
+                                <input type="radio" name="encoder-choice" value="sha512-hashgenerator">
+                                <label for="sha512-hashgenerator">SHA-512 Hash Generator</label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class ="result-card">
+                        <div class="card">
+                            <div id="display-encode-decode">
+                                <div>
+                                    <label>URL: </label>
+                                    <input id="url-box" type="text" value=""/>
+                                </div>
+                                <div class="encode-decode-buttons">
+                                    <button id="encode-btn">Encode</button>
+                                    <button id="decode-btn">Decode</button>
+                                </div>
+                                <div>
+                                    <label id="input-result-label">Result: </label>
+                                    <input id="resultencodedecode" type="text">
+                                    
+    
+                                </div>
+                                
+                            </div>
+                            <div id="display-base64-decode" >
+                                <div>
+                                    <p>Use this decoder to decode Base64 encoded string</p>
+                                </div>
+                                <div>
+                                    <input id="base64decode-input" type="text" value="" placeholder="Enter the Base64 string.(eg:)">
+                                </div>
+                                <div>
+                                    <div id="base64decode-result-display">
+                                    </div>
+    
+                                </div>  
+                            </div>
+                        
+                            <div id="display-base64-encode">
+                                <div>
+                                    <p>Use this encoder to encode string to Base64</p> 
+                        
+                                    <input id="base64encode-input" type="text" value="">
+    
+                                </div>
+                                <div>
+                                    <div  id="base64encode-result-display"></div>
+                                </div>
+    
+                        
+                            </div>
+                            <div id="display-md5-hashgenerator">
+                                <div>
+                                    <p>Use this generator to create MD5 hash of a string</p>
+                                    <input id="md5-input" type="text" value="">
+    
+                                </div>
+                                <div>
+                                    <div id="md5-hashed-result-display">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div id="display-sha1-hashgenerator">
+                                <div>
+                                    <p>Use this generator to create SHA-1 hash of a string</p>
+                                    <input id="sha1-input" type="text" value="">
+                                </div>
+    
+                                <div id="sha1-hashed-result-display"></div>
+    
+                            </div>
+    
+                            <div id="display-sha256-hashgenerator">
+                                <div>
+                                    <p>Use this generator to create SHA-256 hash of a string</p>
+                                    <input id="sha256-input" type="text" value="">
+    
+                                </div>
+    
+                                <div id="sha256-hashed-result-display">
+                                </div>
+                            </div>
+    
+                            <div id="display-sha512-hashgenerator">
+                                <div>
+                                    <p>Use this generator to create SHA-512 hash of a string</p>
+                                    <input id="sha512-input" type="text" value="">
+    
+                                </div>
+                                <div id="sha512-hashed-result-display">
+                                </div>
+                            </div> 
+    
+                        </div>
+
+                    </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

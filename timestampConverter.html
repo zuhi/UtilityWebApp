@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timestamp Converter</title>
+    <script defer src="./timestampConverter.js"></script>
+    <link rel="stylesheet" href="./timestampConverter.css"></link>
+</head>
+<body>
+    <div class="container">
+        <div class="header-section">
+            <div class="header-section-col">
+                <img class="header-image" src="./toolsLogo.png">
+                <h1 class="heading" >Tools & Utility App</h1>
+
+            </div>
+            <div>
+                <a href="./index.html">
+                    <img src="https://img.icons8.com/external-royyan-wijaya-detailed-outline-royyan-wijaya/48/000000/external-home-building-royyan-wijaya-detailed-outline-royyan-wijaya-2.png"/>
+
+                </a>
+                
+            </div>    
+        </div>
+        <div class="main-content">
+            <div class="card-conatiner">
+                    <div class="card">
+                        <div id="timeConvertor-choice">
+                            <div class="text-inline">
+                                <input type="radio" name="timeconv-choice" value="epoch-time-convertor">
+                                <label for="epoch-time-convertor">Timestamp to Date & Time Convertor</label>
+                            </div>
+                            <div class="text-inline">
+                                <input type="radio" name="timeconv-choice" value="time-epoch-convertor">
+                                <label for="time-epoch-convertor">Date & Time to Timestamp Convertor</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-card">
+                        <div class="card">
+                                <div id="display-epoch-time">
+                                    Timestamp:<input id="epoch-input" type="text" value=""/>
+                                    <button class="button">Convert Epoch- > Timestamp</button>
+                                    <div id="epochtotime-result-display">
+                                        <div class="field">
+                                            <label>Year</label>
+                                            <input name="y" type="number" id="y" +maxlength="4" placeholder="YYYY" value="">
+                                        </div>
+                                        <div class="field">
+                                            <label>Month</label>
+                                            <input name="y" type="number" id="mm" +maxlength="2" placeholder="MM" value="">
+                                        </div>
+                                        <div class="field">
+                                            <label>Day</label>
+                                            <input name="y" type="number" id="day" +maxlength="2" placeholder="DD" value="">
+                                        </div>
+                                        <div class="field">
+                                            <label>Hour (24hr)</label>
+                                            <input name="y" type="number" id="hr" +maxlength="2" placeholder="HH" value="">
+                                        </div>
+                                        <div class="field">
+                                            <label>Minutes</label>
+                                            <input name="y" type="number" id="min" +maxlength="2" placeholder="MM" value="">
+                                        </div>
+                                        <div class="field">
+                                            <label>Seconds</label>
+                                            <input name="y" type="number" id="sec" +maxlength="2" placeholder="SS" value="">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div id="display-time-epoch">
+                                    <div class="field">
+                                        <label>Year</label>
+                                        <input name="y" type="number" id="y" +maxlength="4" placeholder="YYYY" value="">
+                                    </div>
+                                    <div class="field">
+                                        <label>Month</label>
+                                        <input name="y" type="number" id="mm" +maxlength="2" placeholder="MM" value="">
+                                    </div>
+                                    <div class="field">
+                                        <label>Day</label>
+                                        <input name="y" type="number" id="day" +maxlength="2" placeholder="DD" value="">
+                                    </div>
+                                    <div class="field">
+                                        <label>Hour (24hr)</label>
+                                        <input name="y" type="number" id="hr" +maxlength="2" placeholder="HH" value="">
+                                    </div>
+                                    <div class="field">
+                                        <label>Minutes</label>
+                                        <input name="y" type="number" id="min" +maxlength="2" placeholder="MM" value="">
+                                    </div>
+                                    <div class="field">
+                                        <label>Seconds</label>
+                                        <input name="y" type="number" id="sec" +maxlength="2" placeholder="SS" value="">
+                                    </div>
+ 
+                                    <button id="button">Convert Timestamp -> Epoch </button>
+                                    <div id="timetoepoch-result-display">
+                                    </div>
+                                
+                                </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
