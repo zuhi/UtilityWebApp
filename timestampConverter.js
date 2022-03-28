@@ -3,6 +3,10 @@ const displayerTimetoEpoch = document.querySelector("#display-time-epoch");
 
 const selectedTimeConvertor = document.querySelector("#timeConvertor-choice");
 
+const epochClock = document.querySelector(".epoch-time-clock");
+
+const clock = document.querySelector(".time-clock");
+
 const displayerresultDiv = document.querySelector('.result-card');
 
 
@@ -98,6 +102,21 @@ function timeEpochConvertor(){
 
 }
 
+function clockEpoch(){
+    epochClock.innerHTML = `Current Epoch Time:${Date.parse(new Date())}`;
+
+
+}
+
+function liveclock() {
+    clock.innerHTML = `${new Date().toString()}`;
+
+}
+
+setInterval(clockEpoch,1000);
+setInterval(liveclock,1000);
+
+
 
 selectedTimeConvertor.addEventListener("change",(event)=>{
     reset();
@@ -116,3 +135,5 @@ selectedTimeConvertor.addEventListener("change",(event)=>{
     }
 
 });
+
+
